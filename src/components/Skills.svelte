@@ -118,7 +118,4 @@
 	.skills__container li {
 		margin-left: 16px;
 	}
-	.skills__container span {
-		color: black;
-	}
 </style>
