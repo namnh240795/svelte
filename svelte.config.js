@@ -16,6 +16,9 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base: dev ? '' : process.env.BASE_PATH
+		},
+		prerender: {
+			entries: []
 		}
 	}
 };
