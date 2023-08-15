@@ -1,6 +1,6 @@
 {
 	"name": "my-app",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -13,7 +13,8 @@
 		"format": "prettier --plugin-search-dir . --write .",
 		"test:integration": "playwright test",
 		"test:unit": "vitest",
-		"deploy": "gh-pages -d build -t true"
+		"deploy": "gh-pages -d build -t true",
+		"release": "bumpp"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
@@ -37,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"bumpp": "^9.1.1",
 		"dotenv": "^16.3.1"
 	}
 }
