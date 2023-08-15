@@ -44,6 +44,7 @@
 		flex-direction: row;
 		max-width: 768px;
 		margin: auto;
+		flex-wrap: wrap;
 	}
 
 	.layout__container .main {
@@ -57,11 +58,10 @@
 		background-color: #000000;
 		padding: 16px;
 		min-height: 100vh;
-	}
-
-	.layout__container aside .header {
-	}
-
-	.layout__container aside {
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			min-height: auto;
+			background-color: rgba(0, 0, 0,0.25);
+		}
 	}
 </style>
