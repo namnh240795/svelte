@@ -9,35 +9,32 @@
 	<ul>
 		<li>
 			<Text variant="span">
-				brainless-token-manager:
+				<a href="https://www.npmjs.com/package/brainless-token-manager" target="_blank">
+					brainless-token-manager:
+				</a>
 				<br />
 				Help you manage your token and refresh token in your project (Javascript, Typescript)
 				<br />
-				<a href="https://www.npmjs.com/package/brainless-token-manager" target="_blank">
-					See more
-				</a>
 			</Text>
 		</li>
 		<li>
 			<Text variant="span">
-				number-to-text-vietnamese:
+				<a href="https://www.npmjs.com/package/number-to-text-vietnamese" target="_blank">
+					number-to-text-vietnamese
+				</a>
 				<br />
 				Transform Integer Number To Vietnamese (Javascript, Typescript)
 				<br />
-				<a href="https://www.npmjs.com/package/number-to-text-vietnamese" target="_blank">
-					See more
-				</a>
 			</Text>
 		</li>
 		<li>
 			<Text variant="span">
-				react-native-svgs-to-icon
+				<a href="https://www.npmjs.com/package/react-native-svgs-to-icon" target="_blank">
+					react-native-svgs-to-icon
+				</a>
 				<br />
 				Generate iconfont and icon components in react-native (Similar as AntDesign Icons, MaterialIcons)
 				<br />
-				<a href="https://www.npmjs.com/package/react-native-svgs-to-icon" target="_blank">
-					See more
-				</a>
 			</Text>
 		</li>
 	</ul>
@@ -56,5 +53,9 @@
 	.opensource__header {
 		margin-top: 16px;
 		margin-left: 0;
+	}
+
+	.opensource__container a {
+		color: salmon;
 	}
 </style>

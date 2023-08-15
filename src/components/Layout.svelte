@@ -47,6 +47,10 @@
 		flex-wrap: wrap;
 	}
 
+	.layout__container a {
+		color: salmon;
+	}
+
 	.layout__container .main {
 		flex: 1;
 		padding: 16px;
@@ -61,7 +65,7 @@
 		@media screen and (max-width: 768px) {
 			width: 100%;
 			min-height: auto;
-			background-color: rgba(0, 0, 0,0.25);
+			background-color: rgba(0, 0, 0, 0.25);
 		}
 	}
 </style>
