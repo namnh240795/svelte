@@ -48,7 +48,7 @@
 	}
 
 	.layout__container a {
-		color: salmon;
+		color: #901009;
 	}
 
 	.layout__container .main {
