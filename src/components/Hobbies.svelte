@@ -1,29 +1,31 @@
 <script>
 	import Text from './Text.svelte';
+	import { getContext } from 'svelte';
+	let locale = getContext('locale');
 </script>
 
 <div class="hobbies__header">
-	<Text variant="h4">Hobbies And Interest</Text>
+	<Text variant="h4">{locale?.hobbiesAndInterest}</Text>
 </div>
 <div class="hobbies__container">
 	<ul>
 		<li>
-			<Text variant="span">Money</Text>
+			<Text variant="span">{locale?.hobbies1}</Text>
 		</li>
 		<li>
-			<Text variant="span">Traveling</Text>
+			<Text variant="span">{locale?.hobbies2}</Text>
 		</li>
 		<li>
-			<Text variant="span">Programming Theory, New Technology</Text>
+			<Text variant="span">{locale?.hobbies3}</Text>
 		</li>
 		<li>
-			<Text variant="span">3D China's Anime</Text>
+			<Text variant="span">{locale?.hobbies4}</Text>
 		</li>
 		<li>
-			<Text variant="span">Gym</Text>
+			<Text variant="span">{locale?.hobbies5}</Text>
 		</li>
 		<li>
-			<Text variant="span">Music</Text>
+			<Text variant="span">{locale?.hobbies6}</Text>
 		</li>
 	</ul>
 </div>

@@ -1,15 +1,17 @@
 <script>
 	import Text from './Text.svelte';
+	import { getContext } from 'svelte';
+	let locale = getContext('locale');
 </script>
 
 <div>
 	<div class="about__title">
-		<Text variant="h4">Education</Text>
+		<Text variant="h4">{locale?.education}</Text>
 	</div>
 	<div class="about__description">
-		<Text variant="h5">Bachelor Of Information And Technology</Text>
+		<Text variant="h5">{locale?.educationCertificate}</Text>
 		<div class="about__sub">
-			<Text variant="h5">Ha Noi University (2013-2017)</Text>
+			<Text variant="h5">{locale?.educationCertificationDate}</Text>
 		</div>
 	</div>
 </div>

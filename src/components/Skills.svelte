@@ -1,5 +1,7 @@
 <script>
 	import Text from './Text.svelte';
+	import { getContext } from 'svelte';
+	let locale = getContext('locale');
 </script>
 
 <div>
@@ -10,33 +12,31 @@
 		<div class="skills__container">
 			<ul>
 				<li>
-					<Text variant="span">HTML, CSS</Text>
+					<Text variant="span">{locale?.skills1}</Text>
 				</li>
 				<li>
-					<Text variant="span">Main Languages: Javascript, Typescript</Text>
+					<Text variant="span">{locale?.skills2}</Text>
 				</li>
 				<li>
-					<Text variant="span">Main Frameworks: NextJS, ReactNative, ReactJS, NestJS</Text>
+					<Text variant="span">{locale?.skills3}</Text>
 				</li>
 				<li>
-					<Text variant="span">Knowledge UI Design, Design System</Text>
+					<Text variant="span">{locale?.skills4}</Text>
 				</li>
 				<li>
-					<Text variant="span">Experience with Web3, Blockchain</Text>
+					<Text variant="span">{locale?.skills5}</Text>
 				</li>
 				<li>
-					<Text variant="span">Experience with Github Actions</Text>
+					<Text variant="span">{locale?.skills6}</Text>
 				</li>
 				<li>
-					<Text variant="span"
-						>Experience with AWS (Fargate, Elastic Container Service, S3 Bucket,etc)</Text
-					>
+					<Text variant="span">{locale?.skills7}</Text>
 				</li>
 				<li>
-					<Text variant="span">Experience with Cloudflare</Text>
+					<Text variant="span">{locale?.skills8}</Text>
 				</li>
 				<li>
-					<Text variant="span">Can research and work with any libraries, languages</Text>
+					<Text variant="span">{locale?.skills9}</Text>
 				</li>
 			</ul>
 		</div>

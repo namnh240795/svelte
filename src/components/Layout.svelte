@@ -7,6 +7,8 @@
 	import OpenSourceProject from './OpenSourceProject.svelte';
 	import Skills from './Skills.svelte';
 	import Text from './Text.svelte';
+	import { getContext } from 'svelte';
+	let locale = getContext('locale');
 </script>
 
 <div class="layout__container">
@@ -14,18 +16,23 @@
 		<div class="header">
 			<Avatar />
 			<div class="role">
-				<Text variant="h4">Nguyen Hoai Nam</Text>
-				<Text variant="h5">Senior Developer</Text>
+				<Text variant="h4">{locale?.title}</Text>
+				<Text variant="h5">{locale?.description}</Text>
 			</div>
-			<Contact>Phone Number: +84 961832495</Contact>
-			<Contact>Date Of Birth: 24/07/1995</Contact>
+			<Contact>{locale?.phoneNumber}: +84 961832495</Contact>
+			<Contact>{locale?.dateOfBirth}: 24/07/1995</Contact>
 			<Contact>Email: namnh240795@gmail.com</Contact>
 			<Contact>
 				Github: <a href="https://github.com/namnh240795" target="_blank">
 					https://github.com/namnh240795
 				</a>
 			</Contact>
-			<Contact>Location: Ha Noi, Viet Nam</Contact>
+			<Contact>{locale?.location}: Hà Nội, Việt Nam</Contact>
+			<Contact>
+				{locale?.lang}: <a href={locale?.cvLink} target="_blank">
+					{locale?.cvLink}
+				</a>
+			</Contact>
 		</div>
 		<OpenSourceProject />
 		<Hobbies />

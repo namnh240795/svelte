@@ -1,16 +1,16 @@
 <script>
+	import { getContext } from 'svelte';
+	let locale = getContext('locale');
 	import Text from './Text.svelte';
 </script>
 
 <div>
 	<div class="about__title">
-		<Text variant="h4">About</Text>
+		<Text variant="h4">{locale?.about}</Text>
 	</div>
 	<div class="about__description">
 		<Text variant="h5">
-			A Senior Software Developer with six years of experience in developing web and mobile
-			applications. I believe that with my experience and knowledge, I can contribute to the success
-			of your products.
+			{locale?.aboutDescription}
 		</Text>
 	</div>
 </div>

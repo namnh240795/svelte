@@ -1,9 +1,11 @@
 <script>
 	import Text from './Text.svelte';
+	import { getContext } from 'svelte';
+	let locale = getContext('locale');
 </script>
 
 <div class="opensource__header">
-	<Text variant="h4">Open Source Projects</Text>
+	<Text variant="h4">{locale?.openSourceProject}</Text>
 </div>
 <div class="opensource__container">
 	<ul>
@@ -13,7 +15,7 @@
 					brainless-token-manager:
 				</a>
 				<br />
-				Help you manage your token and refresh token in your project (Javascript, Typescript)
+					{locale?.brainlessTokenManagerDescription}
 				<br />
 			</Text>
 		</li>
@@ -23,7 +25,7 @@
 					number-to-text-vietnamese
 				</a>
 				<br />
-				Transform Integer Number To Vietnamese (Javascript, Typescript)
+				{locale?.numberToTextVietnameseDescription}
 				<br />
 			</Text>
 		</li>
@@ -33,7 +35,7 @@
 					react-native-svgs-to-icon
 				</a>
 				<br />
-				Generate iconfont and icon components in react-native (Similar as AntDesign Icons, MaterialIcons)
+				{locale?.reactNativeSvgsToIconDescription}
 				<br />
 			</Text>
 		</li>
