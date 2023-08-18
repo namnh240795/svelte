@@ -1,7 +1,7 @@
 export const vi = {
 	title: 'Nguyễn Hoài Nam',
 	description: 'Lập trình viên',
-	url: 'https://cv.yellowcanle.party/vi',
+	url: 'https://cv.yellowcandle.party/vi',
 	about: 'Về tôi',
 	aboutDescription:
 		'Lập trình viên với 6 năm kinh nghiệm trong lĩnh vực phát triển ứng dụng web và mobile. Tôi tin rằng với kinh nghiệm và kiến thức của mình, tôi có thể đóng góp vào sự thành công của sản phẩm của bạn.',
@@ -35,13 +35,13 @@ export const vi = {
 	location: 'Địa chỉ',
 	address: 'Hà Nội, Việt Nam',
 	lang: 'English',
-	cvLink: 'https://cv.yellowcanle.party/en'
+	cvLink: 'https://cv.yellowcandle.party/en'
 };
 
 export const en = {
 	title: 'Nguyen Hoai Nam',
 	description: 'Senior Developer',
-	url: 'https://cv.yellowcanle.party/en',
+	url: 'https://cv.yellowcandle.party/en',
 	about: 'About me',
 	aboutDescription:
 		'A Senior Software Developer with six years of experience in developing web and mobile applications. I believe that with my experience and knowledge, I can contribute to the success of your products.',
@@ -76,5 +76,5 @@ export const en = {
 	location: 'Location',
 	address: 'Ha Noi, Viet Nam',
 	lang: 'Tiếng Việt',
-	cvLink: 'https://cv.yellowcanle.party/vi'
+	cvLink: 'https://cv.yellowcandle.party/vi'
 };
