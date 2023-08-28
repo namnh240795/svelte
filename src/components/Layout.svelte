@@ -11,13 +11,13 @@
 	let locale = getContext('locale');
 </script>
 
-
-
 <div class="text-[antiquewhite] flex flex-row max-w-screen-md m-auto flex-wrap">
-	<aside class="md:w-[220px] md:bg-[#000000] p-[16px] md:min-h-screen w-full bg-[rgba(0,_0,_0,_0.25)]">
-		<div class="header">
+	<aside
+		class="md:w-[220px] md:bg-[#000000] p-[16px] md:min-h-screen w-full bg-[rgba(0,_0,_0,_0.25)]"
+	>
+		<div>
 			<Avatar />
-			<div class="role">
+			<div>
 				<Text variant="h4">{locale?.title}</Text>
 				<Text variant="h5">{locale?.description}</Text>
 			</div>
@@ -31,18 +31,18 @@
 			</Contact>
 			<Contact>{locale?.location}: Hà Nội, Việt Nam</Contact>
 			<Contact>
-				{locale?.lang}: <a class="text-[#901009]" href={locale?.cvLink} target="_blank">
+				{locale?.lang}:
+				<a class="text-[#901009]" href={locale?.cvLink} target="_blank">
 					{locale?.cvLink}
 				</a>
 			</Contact>
 		</div>
 		<OpenSourceProject />
-		<Hobbies />
 	</aside>
 	<div class="flex-[1] p-[16px] bg-[antiquewhite]">
 		<About />
 		<Education />
 		<Skills />
+		<Hobbies />
 	</div>
 </div>
-

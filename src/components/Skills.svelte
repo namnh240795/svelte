@@ -5,12 +5,14 @@
 </script>
 
 <div class="animate-fade">
-	<div class="mt-[24px] text-[black] border-b-[3px] [border-bottom-color:black] border-solid w-[fit-content]">
+	<div
+		class="mt-[24px] text-[black] border-b-[3px] [border-bottom-color:black] border-solid w-[fit-content]"
+	>
 		<Text variant="h4">Skills</Text>
 	</div>
 	<div class="mt-[16px] text-[black]">
-		<div class="list-[square] [&>li]:ml-[16px]">
-			<ul>
+		<div class="ml-4">
+			<ul class="list-[circle]">
 				<li>
 					<Text variant="span">{locale?.skills1}</Text>
 				</li>
@@ -42,4 +44,3 @@
 		</div>
 	</div>
 </div>
-
