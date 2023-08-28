@@ -11,8 +11,10 @@
 	let locale = getContext('locale');
 </script>
 
-<div class="layout__container">
-	<aside>
+
+
+<div class="text-[antiquewhite] flex flex-row max-w-screen-md m-auto flex-wrap">
+	<aside class="md:w-[220px] md:bg-[#000000] p-[16px] md:min-h-screen w-full bg-[rgba(0,_0,_0,_0.25)]">
 		<div class="header">
 			<Avatar />
 			<div class="role">
@@ -23,13 +25,13 @@
 			<Contact>{locale?.dateOfBirth}: 24/07/1995</Contact>
 			<Contact>Email: namnh240795@gmail.com</Contact>
 			<Contact>
-				Github: <a href="https://github.com/namnh240795" target="_blank">
+				Github: <a class="text-[#901009]" href="https://github.com/namnh240795" target="_blank">
 					https://github.com/namnh240795
 				</a>
 			</Contact>
 			<Contact>{locale?.location}: Hà Nội, Việt Nam</Contact>
 			<Contact>
-				{locale?.lang}: <a href={locale?.cvLink} target="_blank">
+				{locale?.lang}: <a class="text-[#901009]" href={locale?.cvLink} target="_blank">
 					{locale?.cvLink}
 				</a>
 			</Contact>
@@ -37,42 +39,10 @@
 		<OpenSourceProject />
 		<Hobbies />
 	</aside>
-	<div class="main">
+	<div class="flex-[1] p-[16px] bg-[antiquewhite]">
 		<About />
 		<Education />
 		<Skills />
 	</div>
 </div>
 
-<style lang="css">
-	.layout__container {
-		color: antiquewhite;
-		display: flex;
-		flex-direction: row;
-		max-width: 768px;
-		margin: auto;
-		flex-wrap: wrap;
-	}
-
-	.layout__container a {
-		color: #901009;
-	}
-
-	.layout__container .main {
-		flex: 1;
-		padding: 16px;
-		background-color: antiquewhite;
-	}
-
-	.layout__container aside {
-		width: 220px;
-		background-color: #000000;
-		padding: 16px;
-		min-height: 100vh;
-		@media screen and (max-width: 768px) {
-			width: 100%;
-			min-height: auto;
-			background-color: rgba(0, 0, 0, 0.25);
-		}
-	}
-</style>

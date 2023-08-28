@@ -3,18 +3,8 @@
     
 </script>
 
-<div class="contact-container">
+<div class="px-[8px] py-[4px] rounded-[4px] bg-[antiquewhite] text-[#000000] mt-[16px]">
     <Text variant='p'>
         <slot />
     </Text>
 </div>
-
-<style>
-    .contact-container {
-        padding: 4px 8px;
-        border-radius: 4px;
-        background-color: antiquewhite;
-        color: #000000;
-        margin-top: 16px;
-    }
-</style>
