@@ -14,5 +14,5 @@
 	<meta property="og:description" content={locale?.description} />
 	<meta name="keywords" content={locale?.title} />
 	<meta name="author" content={locale?.title} />
-	<meta property="og:image" content="https://cv.yellowcandle.party/avatar.jpeg" />
+	<meta property="og:image" content="https://resume.yellowcandle.party/avatar.jpeg" />
 </svelte:head>

@@ -27,4 +27,4 @@ jobs:
         run: aws s3 sync --delete ./build s3://${{ secrets.AWS_S3_BUCKET }}
 
       - name: Invalidate Cache CloudFront
-        run: aws cloudfront create-invalidation --distribution-id "E1F8VZKQ80ZUCK" --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id "E1LK7HUL9HKEHY" --paths "/*"
