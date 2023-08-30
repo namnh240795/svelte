@@ -4,7 +4,7 @@
 	let locale = getContext('locale');
 </script>
 
-<div>
+<div class="animate-fade">
 	<div
 		class="mt-[24px] text-[black] border-b-[3px] [border-bottom-color:black] border-solid w-[fit-content]"
 	>
